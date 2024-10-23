@@ -1,0 +1,51 @@
+.item>img{
+    height: 250px;
+    width: 250px;
+    border-radius: 0.5rem;
+}
+
+.item>p{
+    height: 200px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.item>h4{
+    text-align: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECDFCC;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 0.5rem;
+}
+
+.shop{
+    composes: home from "../home/home.module.css";
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.addToCartButton{
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: bold;
+    transition: transform 50ms ease-in-out;
+}
+
+.addToCartButton:hover{
+    transform: scale(1.2);
+    font-weight: bolder;
+    cursor: pointer;
+}

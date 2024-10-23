@@ -1,0 +1,11 @@
+.home{
+    background-color: #697565;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    min-height: 100vh;
+}
+
+.header{
+    text-align: center;
+}
